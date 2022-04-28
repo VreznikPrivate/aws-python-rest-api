@@ -4,7 +4,6 @@ This template demonstrates how to make a simple REST API with Python running on 
 
 This template demonstrates how to make a simple REST API with Python running on AWS Lambda and API Gateway using the traditional Serverless Framework.
 
-This template does not include any kind of persistence (database). For a more advanced examples check out the [examples repo](https://github.com/serverless/examples/) which includes DynamoDB, Mongo, Fauna and other examples.
 
 ## Usage
 
@@ -17,7 +16,7 @@ npm i -g serverless
 This example is made to work with the Serverless Framework dashboard which includes advanced features like CI/CD, monitoring, metrics, etc.
 
 ```
-$ serverless deploy
+$ sls deploy
 ```
 
 To deploy without the dashboard you will need to remove `org` and `app` fields from the `serverless.yml`, and you won’t have to run `sls login` before deploying.
