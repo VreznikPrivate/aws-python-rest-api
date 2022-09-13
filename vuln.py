@@ -7,6 +7,9 @@ file_location = input('\n/Users/christophervandermade/area51.txt ') #
 file = open(file_location, "r")
 print(file.read())
 
+from string import Template
+greeting_template = Template(“Hello World, my name is $name.”)
+greeting = greeting_template.substitute(name=”Hayley”)
 
 # -*- coding: utf-8 -*-
 # set variable to assert:
@@ -23,6 +26,7 @@ assert var_to_assert == "goodbye", f"var_to_assert should be '{var_to_assert}'"
 
 # run like this to disable assert statements: python3 -O py_vuln03.py
 print("When you run code with -O, assert statements are skipped...")
+cursor.execute(f"SELECT admin FROM users WHERE username = '{username}'");
 
 
 def update_details(request, acc_id): 
