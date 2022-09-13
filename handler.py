@@ -8,7 +8,12 @@ def hello(event, context):
     }
 
     response = {"statusCode": 200, "body": json.dumps(body)}
-
+    compute_user_input = input('\nType something here to compute: ')
+if not compute_user_input:
+        print ("No input")
+else:
+        print ("Result: ", eval(compute_user_input))
+        
     return response
 
     # Use this code if you don't use the http event with the LAMBDA-PROXY
